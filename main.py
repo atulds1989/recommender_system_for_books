@@ -94,7 +94,7 @@ for i in range(10):
 def recommend(book):
     try:
         index = np.where(pivot_df.index == book.lower())[0][0]
-        # index = np.where(pivot_df.index == book.lower())[0][0]
+        
     except IndexError:
         st.error("Book not found. Please enter a valid book name.")
         return None
