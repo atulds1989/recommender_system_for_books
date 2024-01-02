@@ -1,11 +1,12 @@
 import helper
 import streamlit as st 
 
-st.sidebar.title("Restaurant Name Generator")
+st.sidebar.title("Book Recommender System")
 
 book = st.sidebar.text_input('Please enter the name of the book for which you would like to see similar books')
 
 submit = st.sidebar.button('Get recommendation')
+
 
 if submit:
     if not book:
@@ -25,5 +26,9 @@ if submit:
                     st.image(url, use_column_width=False, caption=name, width=100) 
                     st.text(f"book name : {name.capitalize()}")
                     st.text(f"book author : {author}")
+    
+    back = st.sidebar.button('back')
 
+    if back:
+        
 

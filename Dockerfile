@@ -1,6 +1,7 @@
 FROM python:3.9.6
-COPY . /app
 WORKDIR /app
+COPY requirements.txt /app
 RUN pip install -r requirements.txt
-EXPOSE $PORT
-CMD gunicorn --workers=4 --bind 0.0.0.0:$PORT main:main
+COPY . /app
+EXPOSE 8501
+CMD ["streamlit","run","app.py"]

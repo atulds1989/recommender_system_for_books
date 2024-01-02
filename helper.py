@@ -10,6 +10,8 @@ pivot_df = pickle.load(open('pivot_df.pkl','rb'))
 books = pickle.load(open('books.pkl','rb'))
 cosine_similarity_scores = pickle.load(open('cosine_similarity_scores.pkl','rb'))
 
+
+
 st.title('Book Recommender System')
 
 st.title("Top 10 popular movies")
