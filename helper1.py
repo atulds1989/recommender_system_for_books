@@ -98,4 +98,4 @@ def footer():
     st.markdown("---")
     st.markdown("### About")
     st.markdown("This app recommends books based on user input and displays the top 10 popular books.")
-    st.markdown("Developed by Atul Purohit")
+    st.markdown("Developed by Atul Purohit.....")
